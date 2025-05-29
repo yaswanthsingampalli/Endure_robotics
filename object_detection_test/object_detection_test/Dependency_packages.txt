@@ -1,0 +1,29 @@
+sudo apt install python3-pip
+pip3 install ultralytics opencv-python
+sudo apt install ros-humble-cv-bridge
+
+python3 -c "from ultralytics import YOLO; model = YOLO('yolov8n.pt'); print('✅ YOLO loaded')"
+python3 -c "import cv2; print('✅ OpenCV version:', cv2.__version__)"
+python3 -c "from cv_bridge import CvBridge; print('✅ cv_bridge works')"
+
+/*Downgrading Numpy to 1.26 as numpy 2 is no compatable with CV_bridge*/
+
+pip3 install "numpy<2"
+python3 -c "from cv_bridge import CvBridge; print('✅ cv_bridge works')"
+
+
+
+-----How to build the file -------
+\\run this in the terminal because your object detection code is n this folder so you need to build your model in this repo//
+cd ~/ros2_ws
+colcon build
+source ~/ros2_ws/install/setup.bash
+
+---adds to the bashrc file
+echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+
+//to launch the file to detect the object e need to do run this command in the terminal\\
+ros2 launch object_detection_test test_detection.launch.py
+
