@@ -1,0 +1,7 @@
+# SetRoute.srv
+geometry_msgs/Point[] waypoints
+---
+bool success
+string message
+
+
