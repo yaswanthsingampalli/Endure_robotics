@@ -1,7 +1,0 @@
-# airport_navigation_interfaces/srv/SetDestination.srv
-float64 latitude
-float64 longitude
-float64 altitude
----
-bool success
-string message
