@@ -1,8 +1,0 @@
-gnss_source_node:
-  ros__parameters:
-    utm_zone: 14 # Example: 14 for wichita. Use appropriate UTM zone for your region.
-
-navigation_node:
-  ros__parameters:
-    distance_threshold: 1.0      # Robot considers destination reached if within this distance (meters)
-    logging_frequency: 1.0       # Frequency in seconds for navigation logs

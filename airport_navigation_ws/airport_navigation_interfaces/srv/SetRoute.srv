@@ -1,6 +1,0 @@
-# SetRoute.srv
-string[] waypoints  # Can be place names or lat,lon strings
----
-bool success
-string message
-

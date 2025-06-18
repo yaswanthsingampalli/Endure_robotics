@@ -1,7 +1,0 @@
-cd ~/airport_navigation_ws
-rm -rf build/ install/ log/
-colcon build
-source install/setup.bash
-
-ros2 launch airport_navigation dynamic_nav_launch.py
-
