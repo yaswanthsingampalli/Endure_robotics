@@ -1,0 +1,54 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: Global Options
+      Class: rviz/GlobalOptions
+      Fixed Frame: map
+
+    - Name: Destination
+      Class: rviz/PointStamped
+      Topic: /destination_position
+      Color: 255; 0; 0
+      Size: 0.3
+
+    - Name: Current Position
+      Class: rviz/PointStamped
+      Topic: /current_position
+      Color: 0; 255; 0
+      Size: 0.3
+
+    - Name: Target Point
+      Class: rviz/PointStamped
+      Topic: /debug/target_point
+      Color: 255; 165; 0
+      Size: 0.3
+
+    - Name: Waypoints
+      Class: rviz/MarkerArray
+      Topic: /debug/waypoints
+
+    - Name: Navigation Path
+      Class: rviz/Path
+      Topic: /debug/path
+      Color: 0; 0; 255
+      Line Style: Lines
+      Line Width: 0.05
+
+    - Name: Goal Marker
+      Class: rviz/Marker
+      Topic: /debug/goal
+
+    - Name: Robot Model (optional)
+      Class: rviz/RobotModel
+      Robot Description: robot_description
+
+  Enabled: true
+  Name: root
+  Tools:
+    - Class: rviz/MoveCamera
+    - Class: rviz/Interact
+    - Class: rviz/Select
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+    - Class: rviz/SetGoal
+  Value: true
