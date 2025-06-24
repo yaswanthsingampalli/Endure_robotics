@@ -1,6 +1,0 @@
-# SetRoute.srv
-CustomWaypoint[] waypoints
----
-bool success
-string message
-
