@@ -1,0 +1,8 @@
+destination_node:
+  ros__parameters:
+    utm_zone: 14
+    use_geocoding: false  # set to true if you want to allow place names
+
+route_manager_node:
+  ros__parameters:
+    utm_zone: 14
