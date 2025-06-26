@@ -1,0 +1,48 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/GlobalOptions
+      Name: Global Options
+      Fixed Frame: map
+
+    - Class: rviz/MarkerArray
+      Name: Marker Array
+      Topic: /visualization_marker_array
+      Enabled: true
+
+    - Class: rviz/PointStamped
+      Name: Destination
+      Topic: /destination_position
+      Color: 255; 0; 0
+      Size: 0.3
+      Enabled: true
+
+    - Class: rviz/PointStamped
+      Name: Current Position
+      Topic: /current_position
+      Color: 0; 255; 0
+      Size: 0.3
+      Enabled: true
+
+    - Class: rviz/PointStamped
+      Name: Target Point
+      Topic: /current_target_position
+      Color: 255; 165; 0
+      Size: 0.3
+      Enabled: true
+
+    - Class: rviz/RobotModel
+      Name: Robot Model
+      Robot Description: robot_description
+      Enabled: false  # Set to true if you have a URDF
+
+  Enabled: true
+  Name: root
+  Tools:
+    - Class: rviz/MoveCamera
+    - Class: rviz/Interact
+    - Class: rviz/Select
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+    - Class: rviz/SetGoal
+  Value: true
