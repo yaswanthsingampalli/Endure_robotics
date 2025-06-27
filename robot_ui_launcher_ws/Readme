@@ -1,5 +1,0 @@
-pip install gunicorn
-
-
-chmod +x start_server.sh
-./start_server.sh
