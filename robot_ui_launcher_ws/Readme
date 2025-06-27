@@ -1,0 +1,10 @@
+pip install gunicorn
+sudo apt install ros-humble-teleop-twist-keyboard
+sudo apt install xterm
+
+chmod +x start_server.sh
+./start_server.sh
+
+
+From any phone, tablet, or laptop on the same Wi-Fi or network, 
+open a browser and go to: http://172.27.211.62:8081  --> it is jetson ip(hostname -I) and the port
