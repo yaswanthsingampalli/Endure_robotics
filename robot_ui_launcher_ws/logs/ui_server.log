@@ -1,7 +1,0 @@
-[2025-06-28 03:06:14 +0800] [11391] [INFO] Starting gunicorn 23.0.0
-[2025-06-28 03:06:14 +0800] [11391] [INFO] Listening at: http://0.0.0.0:8081 (11391)
-[2025-06-28 03:06:14 +0800] [11391] [INFO] Using worker: sync
-[2025-06-28 03:06:14 +0800] [11393] [INFO] Booting worker with pid: 11393
-[2025-06-28 03:11:02 +0800] [11391] [INFO] Handling signal: int
-[2025-06-28 03:11:02 +0800] [11393] [INFO] Worker exiting (pid: 11393)
-[2025-06-28 03:11:02 +0800] [11391] [INFO] Shutting down: Master
