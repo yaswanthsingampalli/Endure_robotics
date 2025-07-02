@@ -9,6 +9,14 @@ echo 'export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp' >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt install ros-humble-visualization-msgs
+pip3 install pyproj
+sudo apt updatete
+sudo apt install ros-humble-airport-navigation-interfaces
+
+Step 5: Install dependencency rosbridgein the root directory
+sudo apt install ros-humble-rosbridge-server
+cd ~/airport_navigation_ws/web_ui
+wget https://raw.githubusercontent.com/RobotWebTools/roslibjs/master/build/roslib.min.js
 
 
 ----Interface process step1---
@@ -29,11 +37,7 @@ echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://package
 
 sudo apt update
 
-Step 5: Install dependencency rosbridgein the root directory
-sudo apt install ros-humble-rosbridge-server
 
-cd ~/airport_navigation_ws/web_ui
-wget https://raw.githubusercontent.com/RobotWebTools/roslibjs/master/build/roslib.min.js
 
 
 -------------step2------------
