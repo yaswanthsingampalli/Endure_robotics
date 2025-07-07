@@ -10,6 +10,8 @@ pip3 install pyproj
 sudo apt updatete
 sudo apt install ros-humble-airport-navigation-interfaces
 sudo apt install ros-humble-rosbridge-server
+
+Delete the existing roslib.min.js file from the path and then try to install it again if incase you see any error:
 cd ~/airport_navigation_ws/web_ui
 wget https://raw.githubusercontent.com/RobotWebTools/roslibjs/master/build/roslib.min.js
 
