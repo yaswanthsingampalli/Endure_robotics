@@ -7,6 +7,9 @@ python3 -m pip install --user setuptools==59.6.0
 chmod +x start_server.sh
 ./start_server.sh
 
+echo "source ~/airport_navigation_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
 
 From any phone, tablet, or laptop on the same Wi-Fi or network, 
 open a browser and go to: http://172.27.211.62:8081  --> it is jetson ip(hostname -I) and the port
