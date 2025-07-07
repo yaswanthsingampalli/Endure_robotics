@@ -3,12 +3,16 @@ sudo apt install ros-humble-teleop-twist-keyboard
 sudo apt install xterm
 pip3 install --user flask
 python3 -m pip install --user setuptools==59.6.0
+sudo apt update
+sudo apt install ros-humble-rmw-cyclonedds-cpp
 
 chmod +x start_server.sh
 ./start_server.sh
 
 echo "source ~/airport_navigation_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+
 
 
 From any phone, tablet, or laptop on the same Wi-Fi or network, 
