@@ -2,7 +2,7 @@ pip install gunicorn
 sudo apt install ros-humble-teleop-twist-keyboard
 sudo apt install xterm
 pip3 install --user flask
-
+python3 -m pip install --user setuptools==59.6.0
 
 chmod +x start_server.sh
 ./start_server.sh
