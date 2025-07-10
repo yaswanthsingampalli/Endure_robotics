@@ -1,0 +1,43 @@
+{
+  "seahawks": {
+    "secondary": "#069D54",
+    "primary": "#0047CC",
+    "alternative": "#B2B4B2"
+  },
+  "spurs": {
+    "primary": "black",
+    "secondary": "#c4ced4",
+    "alternative": "white"
+  },
+  "fiesta": {
+    "primary": "#FF8200",
+    "secondary": "#EF426F",
+    "alternative": "#00B2A9"
+  },
+  "royal": {
+    "primary": "#ffdb00",
+    "secondary": "#0058a3",
+    "alternative": "#e0e0e0"
+  },
+  "dannyphantom": {
+    "primary": "#a3f7b5",
+    "secondary": "#0f1f2e",
+    "alternative": "#ebfbff"
+  },
+  "barbie": {
+    "primary": "#EFA9AE",
+    "secondary": "#E55381",
+    "alternative": "#e0e0e0"
+  },
+  "dolphins": {
+    "primary": "#e0e0e0",
+    "secondary": "#008E97",
+    "alternative": "#FC4C02"
+  },
+  "emma": {
+    "primary": "#2702A2",
+    "secondary": "#C5EFCB",
+    "alternative": "#9670FF"
+  }
+}
+
