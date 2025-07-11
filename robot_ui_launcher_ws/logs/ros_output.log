@@ -1,0 +1,1105 @@
+[INFO] [launch]: All log files can be found below /home/jetson/.ros/log/2025-07-12-03-28-20-076405-yahboom-25823
+[INFO] [launch]: Default logging verbosity is set to INFO
+🧠 Port 8080 not in use, starting web UI server...
+🕒 Waiting for rosbridge (9090) and web UI (8080)...
+[INFO] [dummy_origin_publisher-1]: process started with pid [25828]
+[INFO] [gnss_source_node-2]: process started with pid [25830]
+[INFO] [destination_node-3]: process started with pid [25832]
+[INFO] [route_manager_node-4]: process started with pid [25834]
+[INFO] [pose_publisher_node-5]: process started with pid [25836]
+[INFO] [diagnostics_node-6]: process started with pid [25838]
+[INFO] [marker_viz_node-7]: process started with pid [25840]
+[INFO] [rosbridge_websocket-8]: process started with pid [25842]
+[INFO] [static_transform_publisher-9]: process started with pid [25844]
+[INFO] [rviz2-10]: process started with pid [25846]
+[static_transform_publisher-9] [WARN] [1752262100.439514317] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-9] [INFO] [1752262100.469148013] [static_map_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-9] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-9] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-9] from 'map' to 'base_link'
+[destination_node-3] [INFO] [1752262101.337198590] [destination_node.destination_node]: 🛰️ Destination Node waiting for GNSS origin...
+[marker_viz_node-7] [INFO] [1752262101.368234641] [marker_viz_node]: [RVIZ MARKER] Enhanced Visualization Node Started.
+[pose_publisher_node-5] [INFO] [1752262101.382627233] [pose_publisher_node]: Pose Publisher Node started and subscribing to ENU topics.
+[route_manager_node-4] [INFO] [1752262101.434170738] [route_manager_node.route_manager_node]: 🗺️ Route Manager waiting for GNSS origin...
+[rosbridge_websocket-8] [WARN] [1752262101.592407559] [rosbridge_websocket]: The 'send_action_goals_in_new_thread' parameter is currently set to False, which means sending action goals will block the main thread. Please note that in the Jazzy and later releases, the default value for this parameter will be updated to True.
+[rosbridge_websocket-8] [INFO] [1752262101.603099255] [rosbridge_websocket]: Rosbridge WebSocket server started on port 9090
+[gnss_source_node-2] [INFO] [1752262101.708474761] [gnss_source_node]: [GNSS] Waiting for first GNSS fix...
+[rviz2-10] [INFO] [1752262101.842760376] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-10] [INFO] [1752262101.843303429] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-10] [INFO] [1752262101.897333600] [rviz2]: Stereo is NOT SUPPORTED
+[dummy_origin_publisher-1] [INFO] [1752262101.926891590] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262101.928896577] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[destination_node-3] [INFO] [1752262101.934205162] [destination_node.destination_node]: ✅ GNSS origin received: (37.78110807505081, -97.11376774980187) using EPSG:32614
+[route_manager_node-4] [INFO] [1752262101.934499136] [route_manager_node.route_manager_node]: ✅ GNSS origin received: (37.78110807505081, -97.11376774980187) using EPSG:32614
+✅ Both servers are up! Launching browser...
+[dummy_origin_publisher-1] [INFO] [1752262102.904454507] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262102.906885367] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+2025/07/12 03:28:23.331565 cmd_run.go:1276: WARNING: cannot create user data directory: failed to verify SELinux context of /home/jetson/snap: exec: "matchpathcon": executable file not found in $PATH
+Opening in existing browser session.
+127.0.0.1 - - [12/Jul/2025 03:28:23] "GET /config.js HTTP/1.1" 304 -
+[rosbridge_websocket-8] [INFO] [1752262103.777690612] [rosbridge_websocket]: Calling services in new thread
+[rosbridge_websocket-8] [INFO] [1752262103.778787343] [rosbridge_websocket]: Sending action goals in existing thread
+[rosbridge_websocket-8] [INFO] [1752262103.780539315] [rosbridge_websocket]: Client connected. 1 clients total.
+[dummy_origin_publisher-1] [INFO] [1752262103.904338281] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262103.907571450] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262104.904586516] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262104.907345910] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[rosbridge_websocket-8] [INFO] [1752262105.830268894] [rosbridge_websocket]: Calling services in new thread
+[rosbridge_websocket-8] [INFO] [1752262105.831850696] [rosbridge_websocket]: Sending action goals in existing thread
+[rosbridge_websocket-8] [INFO] [1752262105.833882243] [rosbridge_websocket]: Client connected. 2 clients total.
+[dummy_origin_publisher-1] [INFO] [1752262105.904526852] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262105.907700664] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262106.904853728] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262106.907720223] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262107.904963037] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262107.907808989] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262108.905082290] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262108.907290632] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262109.904963912] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262109.907766634] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262110.904963058] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262110.907772341] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262111.904935542] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262111.907727737] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262112.904948496] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262112.907136424] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262113.904792680] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262113.907641770] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262114.904937357] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262114.907742801] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262115.905148999] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262115.907935692] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262116.904940006] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262116.906846408] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262117.903964117] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262117.907367366] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262118.904960570] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262118.908008791] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262119.904920951] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262119.907624032] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262120.904888554] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262120.906805133] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262121.904928913] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262121.907691385] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262122.904931311] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262122.907729781] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262123.904908962] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262123.907766184] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262124.904881324] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262124.906793775] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262125.904913864] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262125.908262974] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262126.904906202] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262126.907767200] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262127.904939007] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262127.907753639] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262128.904950554] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262128.907749634] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262129.904909546] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262129.907691827] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262130.904834895] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262130.907595513] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262131.904918723] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262131.907907047] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262132.904926477] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262132.908531358] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262133.904907019] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262133.907723220] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262134.904916251] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262134.908003036] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262135.904913182] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262135.907640523] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262136.904947634] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262136.907640320] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262137.904945818] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262137.909005279] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262138.904969715] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262138.908675267] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262139.904936319] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262139.908133087] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262140.904960860] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262140.907005727] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262141.904932331] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262141.907774614] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262142.904918475] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262142.908183178] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262143.904948859] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262143.907776103] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262144.904890910] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262144.907918213] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262145.904904207] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262145.907765179] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262146.904872082] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262146.907737854] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262147.904894915] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262147.907765200] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262148.904970435] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262148.909072204] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262149.904942229] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262149.907795331] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262150.904904631] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262150.907731014] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262151.904975589] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262151.907783957] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262152.904974628] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262152.907067720] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262153.904866517] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262153.907681125] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262154.904978510] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262154.907902139] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262155.904896763] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262155.908926601] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262156.905005552] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262156.907591688] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262157.904859227] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262157.908000195] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262158.904860015] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262158.907919130] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262159.904841393] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262159.907930203] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262160.904912125] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262160.907828205] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262161.904881434] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262161.908075458] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262162.904955456] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262162.908247622] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262163.904920342] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262163.908081919] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[rosbridge_websocket-8] [INFO] [1752262164.697647898] [rosbridge_websocket]: Client disconnected. 1 clients total.
+[dummy_origin_publisher-1] [INFO] [1752262164.904985461] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262164.907627149] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262165.904949860] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262165.907719897] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[rosbridge_websocket-8] [INFO] [1752262165.923398640] [rosbridge_websocket]: Calling services in new thread
+[rosbridge_websocket-8] [INFO] [1752262165.925045027] [rosbridge_websocket]: Sending action goals in existing thread
+[rosbridge_websocket-8] [INFO] [1752262165.926865106] [rosbridge_websocket]: Client connected. 2 clients total.
+[dummy_origin_publisher-1] [INFO] [1752262166.904912990] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262166.907665556] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262167.904585036] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262167.906589366] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262168.904984594] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262168.907951235] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262169.904977006] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262169.907866497] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262170.904986901] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262170.910009360] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262171.904936264] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262171.907771901] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262172.904940741] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262172.906930449] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262173.904911597] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262173.907795713] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262174.904938302] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262174.907799443] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262175.904995192] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262175.908952945] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262176.905034044] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262176.908866425] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262177.904918542] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262177.907400366] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262178.905052740] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262178.907959641] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262179.904995463] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262179.908615530] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262180.904910004] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262180.907940743] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262181.904958982] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262181.907792670] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262182.904969346] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262182.906946320] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262183.904982439] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262183.909758031] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262184.905020499] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262184.907989641] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262185.904879532] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262185.907761060] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262186.904035933] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262186.906843352] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262187.904545013] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262187.907123989] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[rosbridge_websocket-8] [INFO] [1752262188.309158421] [rosbridge_websocket]: Client disconnected. 1 clients total.
+[dummy_origin_publisher-1] [INFO] [1752262188.904974710] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262188.907838416] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262189.904936362] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262189.907791012] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262190.904937380] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262190.907770367] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262191.904291701] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262191.906662107] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262192.904237982] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262192.906469448] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262193.904927739] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262193.907810134] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262194.904343901] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262194.906416651] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262195.904786445] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262195.908201211] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262196.904057758] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262196.906271593] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262197.904889072] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262197.907662766] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262198.906451158] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262198.909012473] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262199.904914090] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262199.906948859] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262200.904938463] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262200.906952016] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262201.904682015] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262201.909023290] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262202.904967831] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262202.907851828] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262203.905025785] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262203.907578654] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262204.905124190] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262204.912075934] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262205.904911438] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262205.907787564] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262206.904964764] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262206.907683966] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262207.904937136] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262207.907718800] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262208.904875911] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262208.907086453] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262209.904993246] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262209.907870589] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262210.905015994] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262210.908015511] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262211.904905340] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262211.907226696] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262212.904878623] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262212.907179564] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262213.904953698] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262213.908224314] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262214.904882539] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262214.907976070] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262215.904935890] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262215.907816851] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262216.904924030] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262216.909329309] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262217.904936074] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262217.908526972] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262218.904909593] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262218.907762331] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262219.904919560] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262219.907749739] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262220.904913913] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262220.908065973] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262221.904960457] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262221.907804109] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262222.904893469] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262222.907726305] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262223.904919919] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262223.907843570] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262224.904948866] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262224.907467021] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262225.904968373] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262225.908709287] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262226.904901322] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262226.907463797] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262227.904932157] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262227.907744962] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262228.904852849] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262228.906745866] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262229.904960386] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262229.907823815] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262230.904929268] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262230.907748090] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262231.905055298] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262231.908097476] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262232.904845494] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262232.907433826] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262233.904981922] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262233.907805545] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262234.904883665] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262234.907731543] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262235.904880252] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262235.907677156] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262236.904935812] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262236.906853694] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262237.904922604] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262237.909070682] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262238.904932177] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262238.907887478] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262239.904627033] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262239.908148180] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262240.904796086] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262240.906800591] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262241.904673718] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262241.906761773] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262242.904004413] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262242.906940740] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262243.904899139] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262243.907755308] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262244.904633180] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262244.907213451] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262245.904931591] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262245.907719506] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262246.904928116] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262246.907803069] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262247.904843519] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262247.907786471] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262248.904919490] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262248.906905181] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262249.904052563] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262249.907196632] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262250.905078076] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262250.907625453] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262251.904962422] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262251.907790818] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262252.904340053] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262252.907316062] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262253.904016329] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262253.906592857] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262254.904888962] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262254.907869387] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262255.904905093] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262255.907890639] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262256.904989698] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262256.908021675] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262257.904906556] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262257.907712745] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262258.903968383] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262258.906414388] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262259.904795997] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262259.907942373] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262260.904920642] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262260.908893755] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262261.904913218] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262261.908018348] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262262.904909052] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262262.907802249] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262263.904943887] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262263.908900138] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262264.904908795] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262264.909096947] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262265.904928736] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262265.908096426] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262266.904867935] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262266.907639824] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262267.904865238] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262267.907632743] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262268.904495051] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262268.907754004] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262269.904880300] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262269.907815290] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262270.904880203] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262270.907674460] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262271.904937858] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262271.907829841] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262272.904965264] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262272.908611284] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262273.904959031] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262273.908021796] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262274.904917942] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262274.907727624] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262275.904884876] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262275.907657886] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262276.904995190] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262276.908975189] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262277.904791005] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262277.908568672] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262278.904447868] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262278.908044578] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262279.904877126] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262279.908238352] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262280.905017259] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262280.907964380] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262281.904890602] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262281.907768188] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262282.904876189] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262282.907974797] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262283.904778632] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262283.907698362] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262284.904854342] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262284.907775192] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262285.904883802] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262285.907733549] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262286.904927683] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262286.908673129] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262287.904985121] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262287.907766262] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262288.905289392] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262288.909113878] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262289.904857760] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262289.907974320] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262290.904852285] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262290.907680787] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262291.904945710] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262291.907844995] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262292.904884566] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262292.907661292] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262293.904935984] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262293.907727654] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262294.904944350] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262294.907757557] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262295.904884386] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262295.907722808] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262296.904725755] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262296.907538386] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262297.904893634] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262297.907729913] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262298.904870496] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262298.907692375] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262299.904943344] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262299.907797223] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262300.904859093] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262300.907570830] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262301.904873867] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262301.908757652] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262302.904914964] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262302.907758060] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262303.904875568] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262303.908109731] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262304.904890079] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262304.906753445] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262305.904938303] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262305.906789125] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262306.904893074] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262306.907691852] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262307.904844248] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262307.907681105] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262308.904789743] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262308.907285997] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262309.904829238] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262309.907637457] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262310.904825168] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262310.907767241] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262311.904863035] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262311.907639606] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262312.904766968] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262312.906667551] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262313.904832484] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262313.907661343] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262314.904839746] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262314.907840923] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262315.904793457] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262315.907624844] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262316.904773073] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262316.907094835] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262317.904902814] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262317.907927511] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262318.904839679] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262318.907634971] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262319.904877039] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262319.907857993] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262320.904834863] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262320.907305840] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262321.904980221] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262321.908936299] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262322.904861502] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262322.907723226] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262323.904889740] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262323.907578507] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262324.904529294] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262324.908069411] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262325.904855895] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262325.907722324] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262326.904447160] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262326.907550035] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262327.904863390] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262327.907801915] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262328.904885111] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262328.907715957] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262329.904851392] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262329.907998778] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262330.904935637] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262330.907752148] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262331.904025572] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262331.906997537] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262332.904794894] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262332.907616205] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262333.904775822] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262333.907774572] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262334.905042297] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262334.907792346] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262335.906367174] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262335.909042535] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262336.904850305] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262336.907190694] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262337.904861399] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262337.907672791] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262338.904782171] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262338.907667483] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262339.904869643] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262339.907745803] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262340.904852873] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262340.906997201] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262341.904787763] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262341.907951569] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262342.904418158] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262342.906252602] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262343.904782477] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262343.907708909] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262344.904311745] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262344.906369035] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262345.904914902] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262345.908632590] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262346.904108646] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262346.906388494] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262347.904782386] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262347.907675219] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262348.904777744] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262348.906762651] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262349.904797850] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262349.907788635] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262350.904845071] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262350.907690258] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262351.904904783] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262351.907887249] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262352.904874267] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262352.907301698] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262353.904864274] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262353.907729429] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262354.904800500] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262354.908139346] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262355.904866463] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262355.907746274] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262356.904897109] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262356.906776483] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262357.904910070] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262357.907834937] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262358.904873409] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262358.907787717] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262359.904853814] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262359.907749146] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262360.904870677] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262360.907676090] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262361.904858813] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262361.907931296] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262362.904709073] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262362.908248655] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262363.904872395] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262363.907758864] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262364.904628274] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262364.907425848] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262365.904866654] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262365.907868706] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262366.904857589] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262366.907791226] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262367.904863157] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262367.907766523] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262368.905015484] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262368.907840483] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262369.904883599] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262369.908274512] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262370.904924168] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262370.908015309] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262371.904563789] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262371.906474588] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262372.904781781] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262372.907334751] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262373.905522561] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262373.908827973] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262374.904770946] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262374.907619017] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262375.904788419] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262375.908352453] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262376.904902860] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262376.907489270] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262377.904833789] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262377.908120098] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262378.905294866] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262378.908786997] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262379.905134611] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262379.907340544] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262380.904900027] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262380.906881323] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262381.905201254] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262381.907365940] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262382.904851101] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262382.907403817] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262383.904035806] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262383.906829288] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262384.904622459] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262384.907480100] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262385.904704802] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262385.908329382] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262386.904861070] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262386.907635257] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262387.904913858] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262387.907740620] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262388.904777117] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262388.907674695] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262389.904879804] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262389.908966237] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262390.904930497] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262390.907854731] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262391.903983378] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262391.907458489] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262392.904010658] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262392.907339402] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262393.904009432] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262393.906780708] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262394.904942252] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262394.908609202] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262395.904237969] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262395.907019613] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262396.904937808] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262396.908936212] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262397.904940153] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262397.907736038] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262398.904698281] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262398.908417551] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262399.904893850] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262399.908911359] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262400.904960400] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262400.909096052] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262401.904894635] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262401.909016016] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262402.904961674] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262402.908414835] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262403.904872397] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262403.908700724] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262404.904893843] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262404.908781690] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262405.904957757] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262405.908560614] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262406.904867339] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262406.909592045] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262407.904879228] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262407.908093159] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262408.904924335] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262408.907009667] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262409.904906663] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262409.908236754] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262410.904371716] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262410.906335544] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262411.904898654] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262411.909068069] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262412.904913662] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262412.907004210] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262413.904894657] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262413.908209293] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262414.904891910] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262414.907702838] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262415.904890509] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262415.907789981] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262416.904898807] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262416.907474536] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262417.904870402] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262417.907706771] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262418.904874320] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262418.907729120] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262419.904886943] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262419.907683504] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262420.904912400] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262420.907713633] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262421.904871427] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262421.908661743] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262422.904898967] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262422.907887528] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262423.904859693] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262423.907651999] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262424.904920707] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262424.907919188] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262425.904984475] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262425.907864044] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262426.904919284] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262426.908957792] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262427.905007149] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262427.908116829] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262428.904972071] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262428.907699994] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262429.904939522] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262429.909037454] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262430.904881789] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262430.908070606] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262431.904917369] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262431.906844272] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262432.904965524] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262432.907373577] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262433.904889968] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262433.907600804] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262434.904903884] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262434.908398108] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262435.904913735] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262435.908865494] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262436.904878658] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262436.908050485] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262437.904926781] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262437.908987435] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262438.904862391] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262438.908076362] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262439.904294195] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262439.907629541] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262440.904845705] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262440.907062784] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262441.904872705] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262441.907681973] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262442.904935863] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262442.907983115] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262443.904968012] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262443.907820801] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262444.904944641] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262444.906962297] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262445.904931379] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262445.907830536] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262446.904905092] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262446.907935449] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262447.904866324] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262447.907735978] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262448.904940673] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262448.907623192] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262449.904916301] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262449.907758339] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262450.904104346] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262450.906843440] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262451.904963646] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262451.908937169] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262452.904924260] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262452.908962038] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262453.904913990] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262453.907107935] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262454.904886887] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262454.908118364] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262455.904114439] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262455.906208320] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262456.905045407] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262456.908731251] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262457.904980695] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262457.907814670] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262458.904952172] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262458.907825476] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262459.904909406] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262459.907888630] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262460.904900461] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262460.907017575] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262461.904263066] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262461.908309935] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262462.904276386] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262462.907060058] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262463.904388998] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262463.906759199] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262464.904832133] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262464.906746528] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262465.905179297] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262465.908289945] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262466.905634808] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262466.908465777] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262467.904965583] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262467.907951943] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262468.904347233] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262468.907188922] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262469.904956491] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262469.907799141] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262470.905027891] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262470.908328491] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262471.905138550] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262471.907908816] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262472.904919797] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262472.907923791] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262473.904940591] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262473.907831113] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262474.905013316] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262474.907498239] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262475.904120245] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262475.907456399] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262476.904958782] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262476.908257624] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262477.904039942] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262477.906866017] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262478.903963526] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262478.906926561] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262479.904264224] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262479.907094812] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262480.904919861] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262480.908097071] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262481.904861700] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262481.907765375] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262482.904526766] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262482.907342314] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262483.904896690] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262483.907730157] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262484.904077425] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262484.906843373] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262485.904897095] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262485.907830307] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262486.904859289] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262486.907722869] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262487.904874884] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262487.907733952] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262488.904013097] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262488.906806182] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262489.904862918] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262489.907712867] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262490.904787262] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262490.907747419] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262491.904932014] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262491.907768395] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262492.904345752] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262492.906947670] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262493.904954650] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262493.907804472] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262494.904944566] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262494.907793299] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262495.904174410] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262495.906964136] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262496.904892695] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262496.908056564] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262497.904743004] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262497.907555674] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262498.905445433] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262498.909618326] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262499.904877616] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262499.907760654] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262500.904023102] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262500.907325500] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262501.904946916] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262501.907796547] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262502.904874498] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262502.907045345] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262503.904892792] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262503.907738647] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262504.904346822] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262504.907442085] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262505.904895180] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262505.907684747] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262506.904882793] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262506.907742120] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262507.904946237] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262507.907879773] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262508.904944201] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262508.909303432] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262509.904798700] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262509.908427756] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262510.904046022] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262510.906724550] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262511.904896727] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262511.907713143] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262512.904890911] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262512.907958815] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262513.904007165] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262513.906616606] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262514.904026387] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262514.906805268] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262515.904780095] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262515.907682784] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262516.904962465] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262516.907732482] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262517.904886330] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262517.906818235] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262518.904896297] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262518.906702922] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262519.904873902] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262519.907693264] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262520.904855498] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262520.907029579] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262521.904856283] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262521.907214172] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262522.904958370] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262522.907995460] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262523.904883966] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262523.907783841] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262524.904969489] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262524.908239635] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262525.904898264] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262525.907769691] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262526.904285877] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262526.907065816] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262527.904313256] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262527.907170218] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262528.904905008] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262528.908958484] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262529.904913485] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262529.907743984] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262530.904942655] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262530.907851106] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262531.904849349] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262531.907669288] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262532.904946081] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262532.908113605] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262533.904793169] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262533.907715444] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262534.904933750] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262534.907803033] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262535.906137104] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262535.909364085] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262536.905222877] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262536.909066466] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262537.904966334] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262537.908161443] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262538.904801748] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262538.907687736] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262539.904881822] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262539.907623810] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262540.905022460] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262540.908154145] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262541.904870446] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262541.907655539] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262542.905845461] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262542.908647258] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262543.904895917] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262543.907740338] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262544.904854874] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262544.907749279] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262545.904923098] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262545.907948896] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262546.904872782] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262546.907872084] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262547.905055637] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262547.907883259] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262548.904131245] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262548.906703282] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262549.904976572] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262549.909330565] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262550.904795580] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262550.907965923] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262551.904060525] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262551.906417074] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262552.904629748] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262552.907677595] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[dummy_origin_publisher-1] [INFO] [1752262553.904799949] [dummy_origin_publisher]: 📡 Publishing dummy GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+[route_manager_node-4] [INFO] [1752262553.908220149] [route_manager_node.route_manager_node]: Received GNSS origin: 37.78110807505081, -97.11376774980187, 0.0
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+
+Keyboard interrupt received, exiting.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rviz2-10] [INFO] [1752262554.219734316] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-9] [INFO] [1752262554.219769613] [rclcpp]: signal_handler(signum=2)
+[INFO] [rviz2-10]: sending signal 'SIGINT' to process[rviz2-10]
+[INFO] [static_transform_publisher-9]: sending signal 'SIGINT' to process[static_transform_publisher-9]
+[INFO] [rosbridge_websocket-8]: sending signal 'SIGINT' to process[rosbridge_websocket-8]
+[ERROR] [static_transform_publisher-9]: process has died [pid 25844, exit code -2, cmd '/opt/ros/humble/lib/tf2_ros/static_transform_publisher 0 0 0 0 0 0 map base_link --ros-args -r __node:=static_map_tf'].
+[INFO] [marker_viz_node-7]: sending signal 'SIGINT' to process[marker_viz_node-7]
+[INFO] [diagnostics_node-6]: sending signal 'SIGINT' to process[diagnostics_node-6]
+[ERROR] [rosbridge_websocket-8]: process has died [pid 25842, exit code -2, cmd '/opt/ros/humble/lib/rosbridge_server/rosbridge_websocket --ros-args -r __node:=rosbridge_websocket --params-file /tmp/launch_params_l9bueb5u --params-file /tmp/launch_params_20z4srs3'].
+[INFO] [pose_publisher_node-5]: sending signal 'SIGINT' to process[pose_publisher_node-5]
+[INFO] [route_manager_node-4]: sending signal 'SIGINT' to process[route_manager_node-4]
+[ERROR] [marker_viz_node-7]: process has died [pid 25840, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/marker_viz_node --ros-args -r __node:=marker_viz_node'].
+[INFO] [destination_node-3]: sending signal 'SIGINT' to process[destination_node-3]
+[ERROR] [diagnostics_node-6]: process has died [pid 25838, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/diagnostics_node --ros-args -r __node:=diagnostics_node'].
+[ERROR] [pose_publisher_node-5]: process has died [pid 25836, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/pose_publisher_node --ros-args -r __node:=pose_publisher_node'].
+[INFO] [gnss_source_node-2]: sending signal 'SIGINT' to process[gnss_source_node-2]
+[INFO] [dummy_origin_publisher-1]: sending signal 'SIGINT' to process[dummy_origin_publisher-1]
+[ERROR] [destination_node-3]: process has died [pid 25832, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/destination_node --ros-args -r __node:=destination_node -r __ns:=/destination_node --params-file /home/jetson/airport_navigation_ws/install/airport_navigation/share/airport_navigation/config/navigation_params.yaml'].
+[diagnostics_node-6] Traceback (most recent call last):
+[diagnostics_node-6]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/diagnostics_node", line 33, in <module>
+[diagnostics_node-6]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'diagnostics_node')())
+[diagnostics_node-6]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/diagnostics_node.py", line 34, in main
+[diagnostics_node-6]     rclpy.spin(node)
+[diagnostics_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[diagnostics_node-6]     executor.spin_once()
+[diagnostics_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[diagnostics_node-6]     self._spin_once_impl(timeout_sec)
+[diagnostics_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[diagnostics_node-6]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[diagnostics_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[diagnostics_node-6]     return next(self._cb_iter)
+[diagnostics_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[diagnostics_node-6]     wait_set.wait(timeout_nsec)
+[diagnostics_node-6] KeyboardInterrupt
+[ERROR] [route_manager_node-4]: process has died [pid 25834, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/route_manager_node --ros-args -r __node:=route_manager_node -r __ns:=/route_manager_node --params-file /home/jetson/airport_navigation_ws/install/airport_navigation/share/airport_navigation/config/navigation_params.yaml'].
+[route_manager_node-4] Traceback (most recent call last):
+[route_manager_node-4]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/route_manager_node", line 33, in <module>
+[route_manager_node-4]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'route_manager_node')())
+[route_manager_node-4]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/route_manager_node.py", line 156, in main
+[route_manager_node-4]     rclpy.spin(node)
+[route_manager_node-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[route_manager_node-4]     executor.spin_once()
+[route_manager_node-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[route_manager_node-4]     self._spin_once_impl(timeout_sec)
+[route_manager_node-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[route_manager_node-4]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[route_manager_node-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[route_manager_node-4]     return next(self._cb_iter)
+[route_manager_node-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[route_manager_node-4]     wait_set.wait(timeout_nsec)
+[route_manager_node-4] KeyboardInterrupt
+[ERROR] [gnss_source_node-2]: process has died [pid 25830, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/gnss_source_node --ros-args -r __node:=gnss_source_node --params-file /home/jetson/airport_navigation_ws/install/airport_navigation/share/airport_navigation/config/navigation_params.yaml'].
+[pose_publisher_node-5] Traceback (most recent call last):
+[pose_publisher_node-5]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/pose_publisher_node", line 33, in <module>
+[pose_publisher_node-5]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'pose_publisher_node')())
+[pose_publisher_node-5]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/pose_publisher_node.py", line 106, in main
+[pose_publisher_node-5]     rclpy.spin(node)
+[pose_publisher_node-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[pose_publisher_node-5]     executor.spin_once()
+[pose_publisher_node-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[pose_publisher_node-5]     self._spin_once_impl(timeout_sec)
+[pose_publisher_node-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[pose_publisher_node-5]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[pose_publisher_node-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[pose_publisher_node-5]     return next(self._cb_iter)
+[pose_publisher_node-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[pose_publisher_node-5]     wait_set.wait(timeout_nsec)
+[pose_publisher_node-5] KeyboardInterrupt
+[ERROR] [rviz2-10]: process has died [pid 25846, exit code -2, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/jetson/airport_navigation_ws/install/airport_navigation/share/airport_navigation/config/airport_nav.rviz --ros-args -r __node:=rviz2'].
+[ERROR] [dummy_origin_publisher-1]: process has died [pid 25828, exit code -2, cmd '/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/dummy_origin_publisher --ros-args -r __node:=dummy_origin_publisher'].
+[destination_node-3] Traceback (most recent call last):
+[destination_node-3]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/destination_node", line 33, in <module>
+[destination_node-3]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'destination_node')())
+[destination_node-3]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/destination_node.py", line 111, in main
+[destination_node-3]     rclpy.spin(node)
+[destination_node-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[destination_node-3]     executor.spin_once()
+[destination_node-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[destination_node-3]     self._spin_once_impl(timeout_sec)
+[destination_node-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[destination_node-3]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[destination_node-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[destination_node-3]     return next(self._cb_iter)
+[destination_node-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[destination_node-3]     wait_set.wait(timeout_nsec)
+[destination_node-3] KeyboardInterrupt
+[marker_viz_node-7] Traceback (most recent call last):
+[marker_viz_node-7]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/marker_viz_node", line 33, in <module>
+[marker_viz_node-7]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'marker_viz_node')())
+[marker_viz_node-7]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/marker_viz_node.py", line 149, in main
+[marker_viz_node-7]     rclpy.spin(node)
+[marker_viz_node-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[marker_viz_node-7]     executor.spin_once()
+[marker_viz_node-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[marker_viz_node-7]     self._spin_once_impl(timeout_sec)
+[marker_viz_node-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[marker_viz_node-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[marker_viz_node-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[marker_viz_node-7]     return next(self._cb_iter)
+[marker_viz_node-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[marker_viz_node-7]     wait_set.wait(timeout_nsec)
+[marker_viz_node-7] KeyboardInterrupt
+[rosbridge_websocket-8] registered capabilities (classes):
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.advertise.Advertise'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.publish.Publish'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.subscribe.Subscribe'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.defragmentation.Defragment'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.advertise_service.AdvertiseService'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.call_service.CallService'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.service_response.ServiceResponse'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.unadvertise_service.UnadvertiseService'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.advertise_action.AdvertiseAction'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.action_feedback.ActionFeedback'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.action_result.ActionResult'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.send_action_goal.SendActionGoal'>
+[rosbridge_websocket-8]  - <class 'rosbridge_library.capabilities.unadvertise_action.UnadvertiseAction'>
+[rosbridge_websocket-8] Exiting due to SIGINT
+[gnss_source_node-2] Traceback (most recent call last):
+[gnss_source_node-2]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/gnss_source_node", line 33, in <module>
+[gnss_source_node-2]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'gnss_source_node')())
+[gnss_source_node-2]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/gnss_source_node.py", line 108, in main
+[gnss_source_node-2]     rclpy.spin(node)
+[gnss_source_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[gnss_source_node-2]     executor.spin_once()
+[gnss_source_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[gnss_source_node-2]     self._spin_once_impl(timeout_sec)
+[gnss_source_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[gnss_source_node-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[gnss_source_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[gnss_source_node-2]     return next(self._cb_iter)
+[gnss_source_node-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[gnss_source_node-2]     wait_set.wait(timeout_nsec)
+[gnss_source_node-2] KeyboardInterrupt
+[dummy_origin_publisher-1] Traceback (most recent call last):
+[dummy_origin_publisher-1]   File "/home/jetson/airport_navigation_ws/install/airport_navigation/lib/airport_navigation/dummy_origin_publisher", line 33, in <module>
+[dummy_origin_publisher-1]     sys.exit(load_entry_point('airport-navigation', 'console_scripts', 'dummy_origin_publisher')())
+[dummy_origin_publisher-1]   File "/home/jetson/airport_navigation_ws/build/airport_navigation/airport_navigation/dummy_origin_publisher.py", line 31, in main
+[dummy_origin_publisher-1]     rclpy.spin(node)
+[dummy_origin_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[dummy_origin_publisher-1]     executor.spin_once()
+[dummy_origin_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[dummy_origin_publisher-1]     self._spin_once_impl(timeout_sec)
+[dummy_origin_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[dummy_origin_publisher-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[dummy_origin_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[dummy_origin_publisher-1]     return next(self._cb_iter)
+[dummy_origin_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[dummy_origin_publisher-1]     wait_set.wait(timeout_nsec)
+[dummy_origin_publisher-1] KeyboardInterrupt

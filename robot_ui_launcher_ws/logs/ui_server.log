@@ -1,0 +1,7 @@
+[2025-07-12 03:27:54 +0800] [25714] [INFO] Starting gunicorn 23.0.0
+[2025-07-12 03:27:54 +0800] [25714] [INFO] Listening at: http://0.0.0.0:8081 (25714)
+[2025-07-12 03:27:54 +0800] [25714] [INFO] Using worker: sync
+[2025-07-12 03:27:54 +0800] [25716] [INFO] Booting worker with pid: 25716
+[2025-07-12 03:35:54 +0800] [25714] [INFO] Handling signal: int
+[2025-07-12 03:35:54 +0800] [25716] [INFO] Worker exiting (pid: 25716)
+[2025-07-12 03:35:54 +0800] [25714] [INFO] Shutting down: Master
