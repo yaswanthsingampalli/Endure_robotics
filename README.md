@@ -15,6 +15,7 @@ sudo apt install ros-humble-airport-navigation-interfaces
 sudo apt install ros-humble-rosbridge-server
 sudo apt update
 sudo apt install ros-humble-rmw-cyclonedds-cpp
+sudo pip3 install gevent
 
 
 Delete the existing roslib.min.js file from the path and then try to install it again if incase you see any error:
