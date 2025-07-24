@@ -1,0 +1,35 @@
+sudo apt update
+sudo apt install -y libmicrohttpd-dev libjansson-dev libnice-dev \
+    libssl-dev libsrtp2-dev libsofia-sip-ua-dev libglib2.0-dev \
+    libopus-dev libogg-dev libini-config-dev libcollection-dev \
+    libconfig-dev pkg-config gengetopt libtool automake cmake git
+
+
+git config --global http.version HTTP/1.1
+git clone --depth 1 https://github.com/meetecho/janus-gateway.git
+
+
+sh autogen.sh
+./configure --prefix=/opt/janus --disable-docs
+make -j$(nproc)
+sudo make install
+sudo make configs
+
+
+
+sudo vi /opt/janus/etc/janus/janus.plugin.streaming.cfg
+[stream-zed]
+type = rtp
+id = 1
+description = ZED2i Live Stream
+audio = no
+video = yes
+videoport = 5004
+videopt = 96
+videortpmap = H264/90000
+
+
+
+sudo pip3 install gevent
+
+
