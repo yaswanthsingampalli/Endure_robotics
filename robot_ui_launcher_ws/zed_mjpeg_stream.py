@@ -3,11 +3,24 @@ import threading
 import time
 import cv2
 import pyzed.sl as sl
+from turbojpeg import TurboJPEG
+from gevent import sleep
+
+# Initialize TurboJPEG encoder
+jpeg = TurboJPEG()
+
+# Configuration
+TARGET_FPS = 10              # Lower FPS to reduce lag
+FRAME_WIDTH = 640            # Downscaled width
+FRAME_HEIGHT = 360           # Downscaled height
 
 class ZEDCameraStream:
     def __init__(self):
         self.zed = sl.Camera()
-        init_params = sl.InitParameters(camera_resolution=sl.RESOLUTION.HD720, depth_mode=sl.DEPTH_MODE.NONE)
+        init_params = sl.InitParameters(
+            camera_resolution=sl.RESOLUTION.HD720,  # You can also try sl.RESOLUTION.VGA
+            depth_mode=sl.DEPTH_MODE.NONE
+        )
         status = self.zed.open(init_params)
         if status != sl.ERROR_CODE.SUCCESS:
             raise RuntimeError(f"❌ Failed to open ZED camera: {status}")
@@ -29,9 +42,10 @@ class ZEDCameraStream:
                 frame = self.image.get_data()
                 if frame is not None:
                     frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2BGR)
+                    frame = cv2.resize(frame, (FRAME_WIDTH, FRAME_HEIGHT))  # Downscale frame
                     with self.lock:
                         self.frame = frame
-            time.sleep(0.01)
+            time.sleep(0.005)
 
     def get_frame(self):
         with self.lock:
@@ -42,6 +56,7 @@ class ZEDCameraStream:
         self.thread.join()
         self.zed.close()
 
+# Global instance
 stream_instance = None
 
 def start_zed_stream():
@@ -55,8 +70,6 @@ def stop_zed_stream():
         stream_instance.stop()
         stream_instance = None
 
-from gevent import sleep  # make sure this is imported
-
 def generate_mjpeg():
     global stream_instance
     while True:
@@ -69,12 +82,14 @@ def generate_mjpeg():
             print("❗ No frame captured...")
             sleep(0.1)
             continue
-        ret, buffer = cv2.imencode('.jpg', frame)
-        if not ret:
-            sleep(0.05)
+        try:
+            buffer = jpeg.encode(frame)  # TurboJPEG encoding
+        except Exception as e:
+            print(f"❌ JPEG encoding failed: {e}")
+            sleep(0.1)
             continue
-        yield (b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
-        sleep(0.03)  # ~30fps
-
-
+        yield (
+            b'--frame\r\n'
+            b'Content-Type: image/jpeg\r\n\r\n' + buffer + b'\r\n'
+        )
+        sleep(1 / TARGET_FPS)
