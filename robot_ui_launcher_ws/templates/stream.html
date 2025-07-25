@@ -1,67 +1,483 @@
-
-<!--stream.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Live Robot Camera Stream</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Robot Camera Stream - Live Feed</title>
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
   <style>
+    :root {
+      --primary-color: #007bff;
+      --success-color: #28a745;
+      --warning-color: #ffc107;
+      --error-color: #dc3545;
+      --dark-bg: #1a1a1a;
+      --panel-bg: rgba(0, 0, 0, 0.8);
+      --text-light: #ffffff;
+      --text-muted: #adb5bd;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body, html {
-      margin: 0; padding: 0; height: 100%; background: #000; overflow: hidden;
-      display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif;
+      height: 100%;
+      background: var(--dark-bg);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      overflow: hidden;
+      color: var(--text-light);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
+
     .video-container {
-      width: 100vw; height: 100vh; position: relative; background: #000;
-      display: flex; justify-content: center; align-items: center;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     #video-stream {
-      max-width: 100%; max-height: 100%; object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      background: #000;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
     }
-    .status {
-      position: absolute; top: 20px; left: 20px; color: #00ff00; 
-      background: rgba(0,0,0,0.7); padding: 10px 15px; border-radius: 5px;
-      font-family: monospace; font-size: 14px;
+
+    .overlay-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, var(--panel-bg) 0%, transparent 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
     }
-    .loading {
-      color: #ffff00;
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--panel-bg);
+      padding: 12px 20px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .error {
-      color: #ff4444;
+
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--warning-color);
+    }
+
+    .status-dot.connected {
+      background: var(--success-color);
+      box-shadow: 0 0 10px var(--success-color);
+    }
+
+    .status-dot.disconnected {
+      background: var(--error-color);
+      box-shadow: 0 0 10px var(--error-color);
+    }
+
+    .status-text {
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background: var(--panel-bg);
+      color: var(--text-light);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn.refresh {
+      background: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn.refresh:hover {
+      background: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .connection-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: var(--panel-bg);
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 12px;
+      color: var(--text-muted);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+      transition: opacity 0.3s ease;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-top: 3px solid var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 16px;
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    .error-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .error-icon {
+      font-size: 48px;
+      color: var(--error-color);
+      margin-bottom: 20px;
+    }
+
+    .error-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--error-color);
+    }
+
+    .error-message {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .overlay-panel {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+      }
+      
+      .status-indicator {
+        padding: 10px 15px;
+      }
+      
+      .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+      }
+      
+      .connection-info {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 11px;
+        text-align: center;
+      }
+    }
+
+    /* Dark mode override for system settings */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: var(--dark-bg);
+      }
     }
   </style>
 </head>
 <body>
   <div class="video-container">
-    <img id="video-stream" src="/video_feed" alt="Robot Camera Stream">
-    <div class="status" id="status">Connecting to stream...</div>
+    <div class="video-wrapper">
+      <img id="video-stream" src="/video_feed" alt="Robot Camera Stream" class="hidden">
+      
+      <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <div class="loading-text">Connecting to robot camera...</div>
+      </div>
+      
+      <div class="error-overlay hidden" id="error-overlay">
+        <div class="error-icon">⚠️</div>
+        <div class="error-title">Connection Failed</div>
+        <div class="error-message" id="error-message">
+          Unable to connect to the robot camera stream. Please check your connection and try again.
+        </div>
+        <button class="btn refresh" onclick="retryConnection()">
+          <span>🔄</span> Retry Connection
+        </button>
+      </div>
+    </div>
+    
+    <div class="overlay-panel">
+      <div class="status-indicator">
+        <div class="status-dot" id="status-dot"></div>
+        <div class="status-text" id="status-text">Connecting...</div>
+      </div>
+      
+      <div class="controls">
+        <button class="btn refresh" onclick="refreshStream()">
+          <span>🔄</span> Refresh Stream
+        </button>
+        <button class="btn" onclick="goHome()">
+          <span>🏠</span> Back to Dashboard
+        </button>
+      </div>
+    </div>
+    
+    <div class="connection-info">
+      Stream: <span id="stream-url">{{ jetson_ip }}:8081/video_feed</span> | 
+      Status: <span id="connection-status">Initializing</span>
+    </div>
   </div>
 
   <script>
-    const statusElement = document.getElementById('status');
-    const videoStream = document.getElementById('video-stream');
-    
-    videoStream.onload = function() {
-      statusElement.textContent = 'Stream active';
-      statusElement.style.color = '#00ff00';
-    };
-    
-    videoStream.onerror = function() {
-      statusElement.textContent = 'Stream error - retrying...';
-      statusElement.style.color = '#ff4444';
-      
-      // Retry after 2 seconds
-      setTimeout(() => {
-        videoStream.src = '/video_feed?' + new Date().getTime();
-      }, 2000);
-    };
-    
-    // Update status if still loading
-    setTimeout(() => {
-      if (statusElement.textContent === 'Connecting to stream...') {
-        statusElement.textContent = 'Stream should be loading...';
-        statusElement.style.color = '#ffff00';
+    class StreamManager {
+      constructor() {
+        this.videoStream = document.getElementById('video-stream');
+        this.loadingOverlay = document.getElementById('loading-overlay');
+        this.errorOverlay = document.getElementById('error-overlay');
+        this.statusText = document.getElementById('status-text');
+        this.statusDot = document.getElementById('status-dot');
+        this.connectionStatus = document.getElementById('connection-status');
+        this.errorMessage = document.getElementById('error-message');
+        this.retryCount = 0;
+        this.maxRetries = 5;
+        this.retryTimeout = null;
       }
-    }, 5000);
+
+      updateStatus(text, type = 'connecting') {
+        this.statusText.textContent = text;
+        this.connectionStatus.textContent = text;
+        
+        // Update status dot
+        this.statusDot.className = 'status-dot';
+        switch(type) {
+          case 'connected':
+            this.statusDot.classList.add('connected');
+            break;
+          case 'disconnected':
+            this.statusDot.classList.add('disconnected');
+            break;
+          case 'connecting':
+          default:
+            // Default yellow status
+            break;
+        }
+      }
+
+      showLoading() {
+        this.loadingOverlay.classList.remove('hidden');
+        this.errorOverlay.classList.add('hidden');
+        this.videoStream.classList.add('hidden');
+        this.updateStatus('Connecting...', 'connecting');
+      }
+
+      hideLoading() {
+        this.loadingOverlay.classList.add('hidden');
+      }
+
+      showError(message) {
+        this.errorOverlay.classList.remove('hidden');
+        this.loadingOverlay.classList.add('hidden');
+        this.videoStream.classList.add('hidden');
+        this.errorMessage.textContent = message || 'Unable to connect to the robot camera stream.';
+        this.updateStatus('Connection Failed', 'disconnected');
+      }
+
+      showStream() {
+        this.videoStream.classList.remove('hidden');
+        this.loadingOverlay.classList.add('hidden');
+        this.errorOverlay.classList.add('hidden');
+        this.updateStatus('Stream Active', 'connected');
+      }
+
+      refreshStream() {
+        this.showLoading();
+        this.retryCount = 0;
+        
+        // Force refresh by changing src
+        const timestamp = new Date().getTime();
+        this.videoStream.src = '/video_feed?' + timestamp;
+      }
+
+      retryConnection() {
+        this.retryCount++;
+        if (this.retryCount <= this.maxRetries) {
+          this.updateStatus(`Retry attempt ${this.retryCount}/${this.maxRetries}...`, 'connecting');
+          setTimeout(() => this.refreshStream(), 1000);
+        } else {
+          this.showError('Maximum retry attempts reached. Please check your connection and try again.');
+        }
+      }
+
+      init() {
+        // Set up event listeners
+        this.videoStream.onload = () => {
+          this.hideLoading();
+          this.showStream();
+          this.retryCount = 0;
+        };
+
+        this.videoStream.onerror = () => {
+          if (this.retryCount < this.maxRetries) {
+            this.retryConnection();
+          } else {
+            this.showError('Failed to load video stream after multiple attempts.');
+          }
+        };
+
+        // Auto-refresh every 30 seconds to prevent stream freezing
+        setInterval(() => {
+          if (!this.errorOverlay.classList.contains('hidden')) {
+            this.refreshStream();
+          }
+        }, 30000);
+
+        // Initial load
+        setTimeout(() => {
+          this.refreshStream();
+        }, 500);
+      }
+    }
+
+    // Initialize stream manager
+    const streamManager = new StreamManager();
+
+    // Global functions
+    function refreshStream() {
+      streamManager.refreshStream();
+    }
+
+    function retryConnection() {
+      streamManager.retryConnection();
+    }
+
+    function goHome() {
+      window.location.href = '/';
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+      switch(event.key) {
+        case 'r':
+        case 'R':
+          // Refresh with 'R' key
+          event.preventDefault();
+          refreshStream();
+          break;
+        case 'Escape':
+          // Go home with Escape key
+          goHome();
+          break;
+      }
+    });
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      streamManager.init();
+    });
+
+    // Handle page visibility changes
+    document.addEventListener('visibilitychange', function() {
+      if (!document.hidden) {
+        // Page became visible, refresh stream
+        setTimeout(() => {
+          streamManager.refreshStream();
+        }, 1000);
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      // Stream will automatically adjust due to CSS
+    });
   </script>
 </body>
 </html>
