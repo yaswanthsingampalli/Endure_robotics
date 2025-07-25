@@ -1,0 +1,51 @@
+
+
+sudo apt install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp2-dev \
+                 libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev \
+                 libcollection-dev pkg-config gengetopt libtool automake
+git clone https://github.com/meetecho/janus-gateway.git
+cd janus-gateway
+sh autogen.sh
+./configure --prefix=/opt/janus --enable-websockets --enable-data-channels --disable-turn-rest-api
+make -j4
+sudo make install
+sudo make configs
+
+
+sudo apt install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good \
+                 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
+sudo apt update
+sudo apt install -y \
+    libmicrohttpd-dev libjansson-dev libnice-dev \
+    libssl-dev libsrtp2-dev libsofia-sip-ua-dev libglib2.0-dev \
+    libopus-dev libogg-dev libini-config-dev libcollection-dev \
+    libconfig-dev pkg-config gengetopt libtool automake \
+    gtk-doc-tools cmake git libcurl4-openssl-dev liblua5.3-dev \
+    libusrsctp-dev libwebsockets-dev
+
+
+sudo mkdir -p /opt/janus/share/janus/demos
+sudo cp -r ~/janus-gateway/html/* /opt/janus/share/janus/demos/
+
+
+ls ~/janus-gateway/html
+ls ~/janus-gateway/html/demos/echotest.html
+sudo cp -r ~/janus-gateway/html /opt/janus/share/janus/
+ls /opt/janus/share/janus/html/demos/echotest.html
+
+
+sudo apt install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
+pip3 install psutil
+
+
+
+
+
+# Go to ZED installation directory
+cd /usr/local/zed/
+
+# Look for installation tools
+ls -la
+
+# Check if there's an installer that might include GStreamer plugins
+./get_python_api.py --help

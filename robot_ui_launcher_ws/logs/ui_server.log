@@ -1,0 +1,78 @@
+[2025-07-26 02:49:59 +0800] [15782] [INFO] Starting gunicorn 23.0.0
+[2025-07-26 02:49:59 +0800] [15782] [INFO] Listening at: http://0.0.0.0:8081 (15782)
+[2025-07-26 02:49:59 +0800] [15782] [INFO] Using worker: sync
+[2025-07-26 02:49:59 +0800] [15784] [INFO] Booting worker with pid: 15784
+[2025-07-26 02:49:59 +0800] [15785] [INFO] Booting worker with pid: 15785
+2025-07-26 02:51:35,877 - ERROR - Video feed error: timed out
+2025-07-26 02:51:47,935 - ERROR - Video feed error: timed out
+2025-07-26 02:52:00,475 - ERROR - Video feed error: timed out
+[2025-07-26 02:52:04 +0800] [15782] [CRITICAL] WORKER TIMEOUT (pid:15785)
+[2025-07-26 02:52:04 +0800] [15785] [ERROR] Error handling request /video_feed
+Traceback (most recent call last):
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    for item in respiter:
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/jetson/robot_ui_launcher_ws/ui_server.py", line 191, in generate
+    chunk = stream.read(8192)  # Read larger chunks
+  File "/usr/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-26 02:52:04 +0800] [15785] [INFO] Worker exiting (pid: 15785)
+[2025-07-26 02:52:04 +0800] [16012] [INFO] Booting worker with pid: 16012
+2025-07-26 02:52:27,835 - ERROR - Video feed error: timed out
+2025-07-26 02:53:06,935 - ERROR - Video feed error: timed out
+2025-07-26 02:54:01,372 - ERROR - Video feed error: timed out
+2025-07-26 02:54:13,515 - ERROR - Video feed error: timed out
+[2025-07-26 02:57:21 +0800] [15782] [CRITICAL] WORKER TIMEOUT (pid:16012)
+[2025-07-26 02:57:21 +0800] [16012] [ERROR] Error handling request /video_feed
+Traceback (most recent call last):
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    for item in respiter:
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/jetson/robot_ui_launcher_ws/ui_server.py", line 191, in generate
+    chunk = stream.read(8192)  # Read larger chunks
+  File "/usr/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-26 02:57:21 +0800] [16012] [INFO] Worker exiting (pid: 16012)
+[2025-07-26 02:57:22 +0800] [16125] [INFO] Booting worker with pid: 16125
+[2025-07-26 02:59:34 +0800] [15782] [CRITICAL] WORKER TIMEOUT (pid:15784)
+[2025-07-26 02:59:34 +0800] [15784] [ERROR] Error handling request /video_feed
+Traceback (most recent call last):
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    for item in respiter:
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/jetson/robot_ui_launcher_ws/ui_server.py", line 191, in generate
+    while True:
+  File "/usr/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/jetson/.local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-26 02:59:34 +0800] [15784] [INFO] Worker exiting (pid: 15784)
+[2025-07-26 02:59:34 +0800] [16176] [INFO] Booting worker with pid: 16176
