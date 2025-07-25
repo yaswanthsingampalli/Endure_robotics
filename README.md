@@ -17,6 +17,8 @@ sudo apt update
 sudo apt install ros-humble-rmw-cyclonedds-cpp
 sudo pip3 install gevent
 pip install PyTurboJPEG
+sudo apt update
+sudo apt install python3-opencv
 
 Delete the existing roslib.min.js file from the path and then try to install it again if incase you see any error:
 cd ~/airport_navigation_ws/web_ui
